@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>TECNÓLOGO TICS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .propiedades-card {
+            margin-bottom: 40px;
+        }
+
+        .detalle {
+            display: none;
+            background-color: #f0f0f0;
+            padding: 15px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .ver-detalles {
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Contenido TICS</div>
+            <ul class="nav-links">
+                <li><a href="#Inducción">Inducción</a></li>
+                <li><a href="#Matematicas">Matemáticas</a></li>
+                <li><a href="#TICS">TICS</a></li>
+                <li><a href="#Fisica">Física</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Conoce tu carrera</h1>
+            <p>El mejor desarrollo para los mejores futuros</p>
+            <button class="class-cta" onclick="mostrarMensaje()">Ver contenido</button>
+
+<div id="mensaje-intro" class="mensaje-oculto">
+  <p>En esta plataforma podrás explorar las competencias clave de tu formación como Tecnólogo TICS: Inducción, Matemáticas, Programación y Física. ¡Prepárate para el futuro!</p>
+</div>
+
+        </section>
+        
+<section id="inicio" class="intro-fondo">
+</section>
+
+   <section id="Inducción">
+            <h2>Inducción</h2>
+            <div class="propiedades-card">
+                <img src="imagenes/induccion.jpg" alt="Competencia " width="500px">
+                <p>Inicia de la forma mas practica y sencilla en nuevo entorno.</p>
+                <button class="ver-detalles" onclick="mostrarDetalle(this)">Ver detalles</button>
+                <div class="detalle">
+                    <p>La inducción del SENA es el primer paso para conocer la institución, sus servicios, normas y tu rol como aprendiz.</p>
+                    <p>Donde manejamos topicos principales como: </p>
+                    <p>SENA</p>
+                        <p>Formacion profesional integral</p>
+                       <p>Programa de Formacion</p> 
+                        <p> formativo </p>
+                </div>
+            </div>
+        </section>
+        <!-- Matemáticas -->
+        <section id="Matematicas">
+            <h2>Matemáticas</h2>
+            <div class="propiedades-card">
+                <img src="imagenes/matematicas.jpg" alt="Competencia matemática" width="500px">
+                <p>Incursa en los conocimientos básicos de las ciencias matemáticas.</p>
+                <button class="ver-detalles" onclick="mostrarDetalle(this)">Ver detalles</button>
+                <div class="detalle">
+                    <p>Las matemáticas desarrollan el pensamiento lógico y la capacidad para resolver problemas reales con modelos numéricos y simbólicos.</p>
+                    <p>Donde manejamos topicos principales como: </p>
+                    <p>Fracciones</p>
+                    <p>Decimales</p>
+                    <p>Porcentajes</p> 
+                     <p>Conversiones</p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="TICS">
+            <h2>TICS</h2>
+            <div class="propiedades-card">
+                <img src="imagenes/programacion.jpg" alt="Competencia de programación" width="500px">
+                <p>Incursa en los conocimientos básicos de la ofitmatica y los lenguajes de programación.</p>
+                <button class="ver-detalles" onclick="mostrarDetalle(this)">Ver detalles</button>
+                <div class="detalle">
+                    <p>Las tics te permite crear aplicaciones, automatizar procesos y desarrollar soluciones tecnológicas útiles para cualquier industria.</p>
+                    <p>Donde manejamos topicos principales como: </p>
+                    <p>Word</p>
+                    <p>Excel</p>
+                    <p>Acces</p> 
+                    <p>Html </p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="Fisica">
+            <h2>Física</h2>
+            <div class="propiedades-card">
+                <img src="imagenes/fisica.jpg" alt="Competencia física" width="500px">
+                <p>Incursa en los conocimientos básicos de las ciencias físicas.</p>
+                <button class="ver-detalles" onclick="mostrarDetalle(this)">Ver detalles</button>
+                <div class="detalle">
+                    <p>La física explica cómo funciona el universo, desde las partículas más pequeñas hasta las galaxias, aplicando leyes matemáticas y experimentales.</p>
+    <p>Donde manejamos topicos principales como: </p>
+                    <p>MRU</p>
+                    <p>MRUA</p>
+                    <p>OHM</p> 
+                    <p>NEWTON </p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="Contacto">
+            <h2>Contacto</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Tecnólogo TICS. Todos los derechos reservados</p>
+    </footer>
+
+    
+    <script>
+        function mostrarDetalle(boton) {
+            const detalle = boton.nextElementSibling;
+            if (detalle.style.display === "block") {
+                detalle.style.display = "none";
+                boton.textContent = "Ver detalles";
+            } else {
+                detalle.style.display = "block";
+                boton.textContent = "Ocultar detalles";
+            }
+        }
+    </script>
+    
+<button id="btn-subir" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">⬆</button>
+<script>
+    const btnSubir = document.getElementById("btn-subir");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            btnSubir.style.display = "block";
+        } else {
+            btnSubir.style.display = "none";
+        }
+    });
+</script>
+<script>
+  function mostrarMensaje() {
+    const mensaje = document.getElementById("mensaje-intro");
+    
+    
+    if (mensaje.style.display === "block") return;
+
+   
+    mensaje.style.display = "block";
+    mensaje.style.animation = "none";
+    void mensaje.offsetWidth; 
+    mensaje.style.animation = "aparecerDesdeAbajo 0.6s ease forwards";
+  }
+</script>
+
+
+</body>
+</html>
